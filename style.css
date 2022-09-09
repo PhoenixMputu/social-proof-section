@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bg-pattern-bottom-desktop.svg"), url("./images/bg-pattern-top-desktop.svg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: left 18vw top 3vh, right 35vw bottom 1vh;
+  background-size: cover;
+  font-family: 'League Spartan', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+    width: 80%;
+    margin-top: 8%;
+}
+
+.section, .card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-right p {
+  color: hsl(300, 43%, 22%);
+}
+
+.section-left, .section-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-left {
+  justify-content: flex-start;
+}
+
+.section-left p {
+  font-weight: 400;
+  margin-top: 10px;
+  color: hsl(303, 10%, 53%);
+}
+
+.section-right {
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: hsl(300, 43%, 22%);
+  padding: 25px;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+
+.card-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 100%;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.second {
+  transform: translateY(10%);
+}
+
+.third {
+  transform: translateY(20%);
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 1rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  transition: transform .2s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.rated-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.rated-container p {
+  color: hsl(300, 43%, 22%);
+}
+
+.rated-container img {
+  width: 20px;
+  height: 20px;
+}
+
+.two {
+  margin-right: 3.5rem;
+}
+
+.one {
+  margin-right: 7rem;
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+h5 {
+  color: #d41cac;
+  font-weight: 400;
+}
+
+.card p {
+  font-size: 15px;
+  color: hsl(300, 24%, 96%);
+  font-weight: 400;
+}
+
+.card-header {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .container, .section, .card-container, .section-left, .section-right {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin: 2rem;
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+  p {
+    margin: 2rem;
+  }
+
+  .second, .third {
+    transform: none;
+  }
+
+  .one, .two {
+    margin: 0;
+  }
+
+  .item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+  }
+
+  .rated-container {
+    align-items: flex-end;
+  }
+
+  .section-right {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 92%;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .card p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}
